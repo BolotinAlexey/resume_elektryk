@@ -7,6 +7,7 @@
 * {
   box-sizing: border-box;
   color: var(--main-color);
+  font-family: "Carter One";
 }
 
 h1,
@@ -19,6 +20,21 @@ p {
   margin: 0;
 }
 
+.soft__item,
+.tech__item,
+.project__link,
+h2 {
+  font-family: "Hind Madurai";
+}
+
+a {
+  font-family: inherit;
+}
+
+p {
+  font-family: "Alkatra";
+}
+
 .section {
   margin-top: 30px;
 }
@@ -27,6 +43,7 @@ p {
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
+  font-family: "Alkatra";
   color: var(--accent-color);
   transition: all 0.25s linear;
 }
@@ -129,6 +146,8 @@ p {
 
 .lang__item > h4 {
   margin: 10px 0 0;
+  font-family: "Hind Madurai";
+  font-weight: 600;
 }
 
 .lang__item > p {
@@ -144,13 +163,13 @@ p {
 /* RIGHT */
 
 .introduce {
-  padding: 10px 20px 15px;
+  padding: 0 20px 7px;
   color: var(--second-color);
   background-color: var(--accent-color);
 }
 
 .introduce > h2 {
-  margin: 0.2rem 0 1rem;
+  margin-bottom: 0.8rem;
   font-size: 1.2rem;
   font-weight: 300;
   color: inherit;
@@ -158,8 +177,9 @@ p {
 
 .summary {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
+  font-family: "Alkatra";
   font-style: italic;
   color: inherit;
 }
@@ -190,9 +210,10 @@ p {
 .project__img {
   position: absolute;
   width: 4rem;
-  height: 6rem;
+  height: 7.5rem;
   left: -3.35rem;
   object-fit: cover;
+  transition: transform 0.25s linear;
 }
 
 .project__img:hover {
@@ -201,7 +222,7 @@ p {
 }
 
 .project:nth-of-type(even) > .project__img {
-  height: 7rem;
+  height: 9rem;
 }
 
 /* .project__title,
