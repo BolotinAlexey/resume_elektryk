@@ -36,13 +36,13 @@ p {
 }
 
 .section {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .title {
   position: relative;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Alkatra";
   color: var(--accent-color);
   transition: all 0.25s linear;
@@ -91,23 +91,19 @@ p {
 }
 
 .right__wrap {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 /* contacts */
 .contacts__img {
-  width: 95%;
+  width: 83%;
   display: block;
   padding: 0;
   border-radius: 10px;
 }
-.contacts {
-  padding-top: 20px;
-  /* margin-top: 47px; */
-}
 
 .contacts__list {
-  margin: 10px 0;
+  margin: 8px 0;
   padding-left: 0;
   list-style: none;
 }
@@ -139,26 +135,26 @@ p {
   padding-left: 22px;
 } */
 
-.tech__item {
+/* .tech__item {
   flex-basis: 100%;
-}
-.lang__item {
+} */
+.lang__item,
+.tech__item {
   flex-basis: 45%;
 }
 
 .lang__item > h4 {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   font-family: "Hind Madurai";
   font-weight: 600;
 }
 
-.lang__item > p {
-  margin: 5px 0 0;
-}
+/* .lang__item > p {
+  margin: 3px 0 0;
+} */
 
 .introduce > h1 {
-  font-size: 3rem;
-  margin: 0;
+  font-size: 2.5rem;
   color: inherit;
 }
 
@@ -171,15 +167,15 @@ p {
 }
 
 .introduce > h2 {
-  margin-bottom: 0.8rem;
-  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
   font-weight: 300;
   color: inherit;
 }
 
 .summary {
   text-align: justify;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   font-family: "Alkatra";
   font-style: italic;
@@ -190,7 +186,9 @@ p {
 .projects__list,
 .work__list,
 .education__list {
+  padding-left: 0;
   list-style: none;
+  margin: 0;
 }
 
 .projects__list {
@@ -199,7 +197,7 @@ p {
 
 .project {
   position: relative;
-  margin-top: 2.5rem;
+  margin-top: 1.3rem;
   padding-left: 1.5rem;
 }
 
@@ -212,7 +210,7 @@ p {
 .project__img {
   position: absolute;
   width: 4rem;
-  height: 7.5rem;
+  height: 7rem;
   left: -3.35rem;
   object-fit: cover;
   transition: transform 0.25s linear;
@@ -224,7 +222,7 @@ p {
 }
 
 .project:nth-of-type(even) > .project__img {
-  height: 9rem;
+  height: 8.5rem;
 }
 
 /* .project__title,
@@ -247,7 +245,7 @@ p {
   margin: 0;
 } */
 .project__description {
-  margin: 0.6rem 0;
+  margin: 0.4rem 0;
 }
 
 .project__link {
@@ -256,13 +254,13 @@ p {
 
 /* Work expierence */
 
-.work__name {
+/* .work__name {
   margin: 3px 0;
-}
+} */
 
 .work__item,
 .education__item {
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   width: 100%;
 }
 
