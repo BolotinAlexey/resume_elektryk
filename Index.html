@@ -11,48 +11,86 @@
     <main class="main container">
       <!------------- LEFT --------------->
       <section class="left">
-        <section class="contacts">
+        <img
+          src="./images/m1.jpg"
+          alt="Oleksii Bolotin"
+          class="contacts__img"
+        />
+        <section class="contacts section">
           <!------- contacts -------->
-          <img
-            src="./images/m1.jpg"
-            alt="Oleksii Bolotin"
-            class="contacts__img"
-          />
-          <ul class="contacts__list">
-            <h3 class="title contacts__title">Contacts</h3>
+          <h3 class="title contacts__title">Contacts</h3>
+          <ul class="contacts__list list">
+            <!-- mail -->
             <li class="contacts__item">
-              <a class="contacts__link" href="mailto:oleksii.bolotin@gmail.com"
-                >oleksii.bolotin@gmail.com</a
-              >
+              <a class="contacts__link" href="mailto:oleksii.bolotin@gmail.com">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="sprite.svg#envelope"></use>
+                </svg>
+                <span class="contacts__text">oleksii.bolotin@gmail.com</span>
+              </a>
             </li>
+
+            <!-- phone -->
             <li class="contacts__item">
-              <a class="contacts__link" href="tel:+48886559715"
-                >+48 886 559 715</a
-              >
+              <a class="contacts__link" href="tel:+48886559715">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="sprite.svg#phone"></use>
+                </svg>
+                <span class="contacts__text">+48 886 559 715</span>
+              </a>
             </li>
+
+            <!-- LinkedIn -->
             <li class="contacts__item">
               <a
                 class="contacts__link"
                 href="https://www.linkedin.com/in/oleksii-bolotin/"
-                >LinkedIn</a
+              >
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="sprite.svg#linkedin"></use>
+                </svg>
+
+                <span class="contacts__text">LinkedIn</span>
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://github.com/BolotinAlexey">
+                <svg class="contacts__icon" width="20" height="20">
+                  <use href="sprite.svg#github"></use>
+                </svg>
+                <span class="contacts__text">GitHub</span>
+              </a>
+            </li>
+
+            <!-- Telegram -->
+
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://t.me/samkiral">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="sprite.svg#telegram"></use>
+                </svg>
+
+                <span class="contacts__text">Telegram</span>
+              </a>
+            </li>
+
+            <!-- Web site -->
+            <li class="contacts__item">
+              <a class="contacts__link" href="https://github.com/BolotinAlexey">
+                <svg class="contacts__icon" width="16" height="16">
+                  <use href="sprite.svg#sphere"></use>
+                </svg>
+                <span class="contacts__text">Web site</span></a
               >
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="https://github.com/BolotinAlexey"
-                >GitHub</a
-              >
+              <svg class="contacts__icon" width="16" height="16">
+                <use href="sprite.svg#location"></use>
+              </svg>
+              <span>Lodz, 94-047, Poland</span>
             </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="https://t.me/samkiral"
-                >Telegram</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="https://github.com/BolotinAlexey"
-                >Web site</a
-              >
-            </li>
-            <li class="contacts__item">Lodz, 94-047, Poland</li>
           </ul>
         </section>
 
@@ -81,7 +119,7 @@
         <section class="soft section">
           <h3 class="title soft__title">Soft skills</h3>
           <ul class="soft list">
-            <li class="soft__item">Analytical thinks</li>
+            <li class="soft__item">Strong analytical thinks</li>
             <li class="soft__item">Creativity</li>
             <li class="soft__item">Conscientious</li>
             <li class="soft__item">Eager to learn</li>
@@ -127,203 +165,209 @@
             and proactive team player who is always eager to learn and grow.
           </p>
         </section>
+        <div class="right__wrap">
+          <!------- Project expierence ------->
+          <section class="projects section">
+            <h3 class="title projects__title">Project expierence</h3>
+            <ul class="projects__list">
+              <!-- WebStudio -->
+              <li class="project">
+                <img
+                  src="./images/WebStudio.png"
+                  alt="WebStudio"
+                  class="project__img"
+                />
+                <div class="flex-between">
+                  <a
+                    href="https://bolotinalexey.github.io/goit-markup-hw-08"
+                    class="project__link"
+                    ><h4 class="project__title">WebStudio</h4></a
+                  >
+                  <p class="project__own">Pet project</p>
+                </div>
 
-        <!------- Project expierence ------->
-        <section class="projects section">
-          <h3 class="title projects__title">Project expierence</h3>
-          <ul class="projects__list">
-            <!-- WebStudio -->
-            <li class="project">
-              <img
-                src="./images/WebStudio.png"
-                alt="WebStudio"
-                class="project__img"
-              />
-              <div class="flex-between">
-                <a
-                  href="https://bolotinalexey.github.io/goit-markup-hw-08"
-                  class="project__link"
-                  ><h4 class="project__title">WebStudio</h4></a
-                >
-                <p class="project__own">Pet project</p>
-              </div>
+                <p class="project__description">
+                  Adaptive and mobile first simple landing site web studio
+                  company with two pages.
+                </p>
+                <div class="flex-between">
+                  <h5 class="project__stack">[ HTML, CSS, SASS ]</h5>
+                  <a
+                    href="https://github.com/BolotinAlexey/goit-markup-hw-08"
+                    class="project__link"
+                    >Code</a
+                  >
+                </div>
+              </li>
 
-              <p class="project__description">
-                Adaptive and mobile first simple landing site web studio company
-                with two pages.
-              </p>
-              <div class="flex-between">
-                <h5 class="project__stack">[ HTML, CSS, SASS ]</h5>
-                <a
-                  href="https://github.com/BolotinAlexey/goit-markup-hw-08"
-                  class="project__link"
-                  >Code</a
-                >
-              </div>
-            </li>
+              <!--  The New York Times -->
+              <li class="project">
+                <img
+                  src="./images/NYTimes.png"
+                  alt="The New York Times"
+                  class="project__img"
+                />
 
-            <!--  The New York Times -->
-            <li class="project">
-              <img
-                src="./images/NYTimes.png"
-                alt="The New York Times"
-                class="project__img"
-              />
+                <div class="flex-between">
+                  <a
+                    href="https://maxf1996.github.io/NYTimesNews/"
+                    class="project__link"
+                    ><h4 class="project__title">The New York Times</h4></a
+                  >
+                  <p class="project__own">Team project</p>
+                </div>
 
-              <div class="flex-between">
-                <a
-                  href="https://maxf1996.github.io/NYTimesNews/"
-                  class="project__link"
-                  ><h4 class="project__title">The New York Times</h4></a
-                >
-                <p class="project__own">Team project</p>
-              </div>
+                <p class="project__description">
+                  Multipage news site with search, calendar, categories,
+                  pagination, weather widget, and save feature. As developer, I
+                  created the header, footer, theme switcher, and aided the
+                  "favourite" section.
+                </p>
+                <div class="flex-between">
+                  <h5 class="project__stack">
+                    [ HTML, SASS, JavaScript, Parcel, Ajax ]
+                  </h5>
+                  <a
+                    href="https://github.com/MaxF1996/NYTimesNews"
+                    class="project__link"
+                    >Code</a
+                  >
+                </div>
+              </li>
 
-              <p class="project__description">
-                Multipage news site with search, calendar, categories,
-                pagination, weather widget, and save feature. As developer, I
-                created the header, footer, theme switcher, and aided the
-                "favourite" section.
-              </p>
-              <div class="flex-between">
-                <h5 class="project__stack">
-                  [ HTML, SASS, JavaScript, Parcel, Ajax ]
-                </h5>
-                <a
-                  href="https://github.com/MaxF1996/NYTimesNews"
-                  class="project__link"
-                  >Code</a
-                >
-              </div>
-            </li>
+              <!-- Hotel "Szalony dom" -->
+              <li class="project">
+                <img
+                  src="./images/Hotel.png"
+                  alt="Hotel"
+                  class="project__img"
+                />
 
-            <!-- Hotel "Szalony dom" -->
-            <li class="project">
-              <img src="./images/Hotel.png" alt="Hotel" class="project__img" />
+                <div class="flex-between">
+                  <a href="http://f0795832.xsph.ru" class="project__link"
+                    ><h4 class="project__title">Hotel "Szalony dom"</h4></a
+                  >
+                  <p class="project__own">Pet project</p>
+                </div>
 
-              <div class="flex-between">
-                <a href="http://f0795832.xsph.ru" class="project__link"
-                  ><h4 class="project__title">Hotel "Szalony dom"</h4></a
-                >
-                <p class="project__own">Pet project</p>
-              </div>
+                <p class="project__description">
+                  Multipage web site of a small hotel. There is an admin panel
+                  for changing the database.
+                </p>
+                <div class="flex-between">
+                  <h5 class="project__stack">[CSS, PHP, MySQL]</h5>
+                  <a
+                    href="https://github.com/BolotinAlexey/goit-markup-hw-08"
+                    class="project__link"
+                    >Code</a
+                  >
+                </div>
+              </li>
 
-              <p class="project__description">
-                Multipage web site of a small hotel. There is an admin panel for
-                changing the database.
-              </p>
-              <div class="flex-between">
-                <h5 class="project__stack">[CSS, PHP, MySQL]</h5>
-                <a
-                  href="https://github.com/BolotinAlexey/goit-markup-hw-08"
-                  class="project__link"
-                  >Code</a
-                >
-              </div>
-            </li>
+              <!-- Ice Cream -->
+              <li class="project">
+                <img
+                  src="./images/IceCream.png"
+                  alt="IceCream"
+                  class="project__img"
+                />
 
-            <!-- Ice Cream -->
-            <li class="project">
-              <img
-                src="./images/IceCream.png"
-                alt="IceCream"
-                class="project__img"
-              />
+                <div class="flex-between">
+                  <a
+                    href="https://bolotinalexey.github.io/go-it-team-project/"
+                    class="project__link"
+                    ><h4 class="project__title">Ice Cream</h4></a
+                  >
+                  <p class="project__own">Team project</p>
+                </div>
 
-              <div class="flex-between">
-                <a
-                  href="https://bolotinalexey.github.io/go-it-team-project/"
-                  class="project__link"
-                  ><h4 class="project__title">Ice Cream</h4></a
-                >
-                <p class="project__own">Team project</p>
-              </div>
+                <p class="project__description">
+                  Web site with adaptive and mobile first design presenting ice
+                  cream-ordering company. My role - team leader and 'customers',
+                  'gallery', 'our team' sections developer.
+                </p>
+                <div class="flex-between">
+                  <h5 class="project__stack">
+                    [ HTML, SASS, Parcel, JavaScript ]
+                  </h5>
+                  <a
+                    href="https://github.com/BolotinAlexey/go-it-team-project"
+                    class="project__link"
+                    >Code</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </section>
 
-              <p class="project__description">
-                Web site with adaptive and mobile first design presenting ice
-                cream-ordering company. My role - team leader and 'customers',
-                'gallery', 'our team' sections developer.
-              </p>
-              <div class="flex-between">
-                <h5 class="project__stack">
-                  [ HTML, SASS, Parcel, JavaScript ]
-                </h5>
-                <a
-                  href="https://github.com/BolotinAlexey/go-it-team-project"
-                  class="project__link"
-                  >Code</a
-                >
-              </div>
-            </li>
-          </ul>
-        </section>
+          <!------- Work expierence ------->
+          <section class="work section">
+            <h3 class="title work__title">Work expierence</h3>
+            <ul class="work__list">
+              <!-- Electrical Engineer -->
+              <li class="work__item">
+                <div class="flex-between mb-5">
+                  <h4 class="work__item__title">Electrical Engineer</h4>
+                  <p class="period">june 1995 - january 2023</p>
+                </div>
 
-        <!------- Work expierence ------->
-        <section class="work section">
-          <h3 class="title work__title">Work expierence</h3>
-          <ul class="work__list">
-            <!-- Electrical Engineer -->
-            <li class="work__item">
-              <div class="flex-between mb-5">
-                <h4 class="work__item__title">Electrical Engineer</h4>
-                <p class="period">june 1995 - january 2023</p>
-              </div>
+                <ul class="work__item-list">
+                  <li class="work__name">
+                    <p class="work__description">
+                      development of a project of electrical cognition of the
+                      premises
+                    </p>
+                  </li>
+                  <li class="work__name">
+                    <p class="work__description">assembly of shields</p>
+                  </li>
+                  <li class="work__name">
+                    <p class="work__description">manual work</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
 
-              <ul class="work__item-list">
-                <li class="work__name">
-                  <p class="work__description">
-                    development of a project of electrical cognition of the
-                    premises
-                  </p>
-                </li>
-                <li class="work__name">
-                  <p class="work__description">assembly of shields</p>
-                </li>
-                <li class="work__name">
-                  <p class="work__description">manual work</p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
+          <!----------- Education ---------->
+          <section class="educution">
+            <h3 class="title education__title">Education</h3>
 
-        <!----------- Education ---------->
-        <section class="educution">
-          <h3 class="title education__title">Education</h3>
+            <ul class="education__list">
+              <!-- GoIT -->
+              <li class="educution__item">
+                <div class="flex-between mb-5">
+                  <h4 class="educution__name">GoIT</h4>
+                  <p class="period">august 2022 - august 2023</p>
+                </div>
+                <p class="educution__desription">Fulstack developer</p>
+              </li>
 
-          <ul class="education__list">
-            <!-- GoIT -->
-            <li class="educution__item">
-              <div class="flex-between mb-5">
-                <h4 class="educution__name">GoIT</h4>
-                <p class="period">august 2022 - august 2023</p>
-              </div>
-              <p class="educution__desription">Fulstack developer</p>
-            </li>
+              <!-- COSINUS -->
+              <li class="educution__item">
+                <div class="flex-between mb-5">
+                  <h4 class="educution__name">Wyższa Szkoła COSINUS</h4>
+                  <p class="period">september 2022 - june 2023</p>
+                </div>
+                <p class="educution__desription">Informatics technician</p>
+              </li>
 
-            <!-- COSINUS -->
-            <li class="educution__item">
-              <div class="flex-between mb-5">
-                <h4 class="educution__name">Wyższa Szkoła COSINUS</h4>
-                <p class="period">september 2022 - june 2023</p>
-              </div>
-              <p class="educution__desription">Informatics technician</p>
-            </li>
-
-            <!-- KNTU -->
-            <li class="educution__item">
-              <div class="flex-between mb-5">
-                <h4 class="educution__name">
-                  Kirovohrad National Technical University
-                </h4>
-                <p class="period">september 1990 - june 1995</p>
-              </div>
-              <p class="educution__desription">
-                Systemic engineer (automation and control in technical systems)
-              </p>
-            </li>
-          </ul>
-        </section>
+              <!-- KNTU -->
+              <li class="educution__item">
+                <div class="flex-between mb-5">
+                  <h4 class="educution__name">
+                    Kirovohrad National Technical University
+                  </h4>
+                  <p class="period">september 1990 - june 1995</p>
+                </div>
+                <p class="educution__desription">
+                  Systemic engineer (automation and control in technical
+                  systems)
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
     </main>
   </body>

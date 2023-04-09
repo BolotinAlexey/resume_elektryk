@@ -1,5 +1,12 @@
+:root {
+  --main-color: #000;
+  --accent-color: #ff5d52;
+  --second-color: #fff;
+}
+
 * {
   box-sizing: border-box;
+  color: var(--main-color);
 }
 
 h1,
@@ -20,6 +27,7 @@ p {
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
+  color: var(--accent-color);
   transition: all 0.25s linear;
 }
 
@@ -60,15 +68,13 @@ p {
 
 .left {
   width: 35%;
-  padding: 20px;
-
-  background-color: bisque;
 }
 .right {
   width: 65%;
-  padding: 20px;
+}
 
-  background-color: antiquewhite;
+.right__wrap {
+  padding: 20px;
 }
 
 /* contacts */
@@ -78,28 +84,45 @@ p {
   padding: 0;
   border-radius: 10px;
 }
-.contacts__title {
-  display: none;
+.contacts {
+  padding-top: 20px;
+  /* margin-top: 47px; */
 }
+
 .contacts__list {
-  margin: 10px;
+  margin: 10px 0;
   padding-left: 0;
   list-style: none;
 }
+
+.soft__item,
 .contacts__item {
-  margin-bottom: 5px;
-  /* transition: transform 0.25s linear; */
+  flex-basis: 100%;
 }
-.contacts__link {
-  text-decoration: none;
-  color: black;
+.contacts__link,
+.contacts__item:nth-last-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.contacts__item:hover {
-  transform: translate(1em);
+.contacts__icon {
+  fill: var(--accent-color);
 }
 
+.contacts__icon {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: order 0.25s linear;
+  /* text-decoration: none; */
+}
+.contacts__link:hover > .contacts__icon {
+  order: 1;
+}
+/* .contacts__item:hover > .contacts__link {
+  padding-left: 22px;
+} */
+
 .tech__item,
-.soft__item,
 .lang__item {
   flex-basis: 45%;
 }
@@ -115,19 +138,30 @@ p {
 .introduce > h1 {
   font-size: 2.5rem;
   margin: 0;
+  color: inherit;
 }
 
 /* RIGHT */
+
+.introduce {
+  padding: 10px 20px 15px;
+  color: var(--second-color);
+  background-color: var(--accent-color);
+}
+
 .introduce > h2 {
-  font-size: 1rem;
+  margin: 0.2rem 0 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
+  color: inherit;
 }
 
 .summary {
   text-align: justify;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
+  color: inherit;
 }
 
 /* Project expierence */
@@ -137,10 +171,14 @@ p {
   list-style: none;
 }
 
+.projects__list {
+  padding-left: 53px;
+}
+
 .project {
   position: relative;
   margin-top: 2rem;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .flex-between {
@@ -157,6 +195,11 @@ p {
   object-fit: cover;
 }
 
+.project__img:hover {
+  transform: scale(8);
+  z-index: 10;
+}
+
 .project:nth-of-type(even) > .project__img {
   height: 7rem;
 }
@@ -170,7 +213,6 @@ p {
 .work__title,
 .education__title {
   margin-right: 2rem;
-  color: black;
 }
 
 .project__title {
