@@ -27,7 +27,7 @@
 
 .container {
   margin: 0 auto;
-  width: 768px;
+  width: 920px;
 }
 
 .list {
@@ -44,14 +44,14 @@
 }
 
 .left {
-  max-width: 100%;
+  width: 35%;
   padding: 20px;
 
   background-color: bisque;
 }
 .right {
-  max-width: 100%;
-  padding: 10px;
+  width: 65%;
+  padding: 20px;
 
   background-color: antiquewhite;
 }
@@ -95,4 +95,54 @@
 
 .lang__item > p {
   margin: 5px 0 0;
+}
+
+.introduce > h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* RIGHT */
+.introduce > h2 {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.summary {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Project expierence */
+.projects__list {
+  list-style: none;
+}
+
+.project {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+.project__img {
+  position: absolute;
+  width: 4rem;
+  left: -3.5rem;
+}
+
+.project__title,
+.project__stack {
+  display: inline-block;
+  margin: 0;
+}
+
+.project__title {
+  font-size: 1.1rem;
+  margin-right: 2rem;
+}
+.project__description {
+  margin: 0.5rem 0;
 }
