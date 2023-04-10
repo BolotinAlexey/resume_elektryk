@@ -7,7 +7,7 @@
 * {
   box-sizing: border-box;
   color: var(--main-color);
-  font-family: "Carter One";
+  font-family: "Hind Madurai";
 }
 
 h1,
@@ -24,7 +24,7 @@ p {
 .tech__item,
 .project__link,
 h2 {
-  font-family: "Hind Madurai";
+  /* font-family: "Hind Madurai"; */
 }
 
 a {
@@ -32,7 +32,7 @@ a {
 }
 
 p {
-  font-family: "Alkatra";
+  /* font-family: "Alkatra"; */
 }
 
 .section {
@@ -42,8 +42,10 @@ p {
 .title {
   position: relative;
   text-transform: uppercase;
-  font-size: 1.3rem;
-  font-family: "Alkatra";
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Alkatra", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   color: var(--accent-color);
   transition: all 0.25s linear;
 }
@@ -145,7 +147,6 @@ p {
 
 .lang__item > h4 {
   margin: 8px 0 0;
-  font-family: "Hind Madurai";
   font-weight: 600;
 }
 
@@ -154,7 +155,7 @@ p {
 } */
 
 .introduce > h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   color: inherit;
 }
 
@@ -178,7 +179,6 @@ p {
   font-size: 0.9rem;
   font-weight: 500;
   font-family: "Alkatra";
-  font-style: italic;
   color: inherit;
 }
 
@@ -210,7 +210,7 @@ p {
 .project__img {
   position: absolute;
   width: 4rem;
-  height: 7rem;
+  height: 6.7rem;
   left: -3.35rem;
   object-fit: cover;
   transition: transform 0.25s linear;
@@ -222,7 +222,7 @@ p {
 }
 
 .project:nth-of-type(even) > .project__img {
-  height: 8.5rem;
+  height: 8rem;
 }
 
 /* .project__title,
@@ -230,10 +230,8 @@ p {
   margin: 0;
 } */
 
-.project__title,
-.work__title,
-.education__title {
-  /* line-height: 1; */
+.project__title {
+  font-size: 1.2rem;
   margin-right: 2rem;
 }
 
@@ -245,7 +243,7 @@ p {
   margin: 0;
 } */
 .project__description {
-  margin: 0.4rem 0;
+  margin: 0.6rem 0;
 }
 
 .project__link {
@@ -265,8 +263,9 @@ p {
 }
 
 .period {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
   font-size: 0.8rem;
-  font-style: italic;
 }
 
 .work__item-list {
