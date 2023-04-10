@@ -36,7 +36,7 @@ p {
 }
 
 .section {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .title {
@@ -258,8 +258,12 @@ p {
 
 .work__item,
 .education__item {
-  margin: 10px 0 0;
+  margin: 15px 0 0;
   width: 100%;
+}
+
+.work__name {
+  margin-top: 5px;
 }
 
 .period {
