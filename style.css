@@ -41,6 +41,10 @@ p {
   margin-top: 30px;
 }
 
+.right section {
+  margin-top: 25px;
+}
+
 .title {
   position: relative;
   text-transform: uppercase;
