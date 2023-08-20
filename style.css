@@ -127,6 +127,7 @@ p {
 .main {
   background-color: rgba(var(--accent-rgb), 0.03);
   display: flex;
+  transform: scale(1.1);
 }
 
 .left {
