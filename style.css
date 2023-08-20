@@ -127,7 +127,6 @@ p {
 .main {
   background-color: rgba(var(--accent-rgb), 0.03);
   display: flex;
-  transform: scale(1.1) translateY(80px);
 }
 
 .left {
@@ -170,9 +169,16 @@ p {
   background-color: var(--accent-color);
   transition: width 0.3s ease;
 }
+* {
+  font-size: 1.05rem;
+}
 .contacts__item:hover:before {
   width: 100%;
 }
+.contacts__item span {
+  font-size: 1.2rem;
+}
+
 .contacts__link,
 .contacts__item:nth-last-of-type(1) {
   display: flex;
