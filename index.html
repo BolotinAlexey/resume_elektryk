@@ -10,27 +10,33 @@
       href="https://fonts.googleapis.com/css2?family=Alkatra&family=Carter+One&family=Hind+Madurai:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <title>Resume</title>
+    <title>cv</title>
   </head>
   <body>
+    <!-- <header class="header container"></header> -->
+
+    <!--- Main -->
     <main class="main container">
-      <!------------- LEFT --------------->
-      <section class="left">
+      <!--- LEFT -->
+      <div class="left">
         <img
-          src="./images/m1.jpg"
+          src="./assets/m1.jpg"
           alt="Oleksii Bolotin"
           class="contacts__img"
+          width="260"
+          height="260"
         />
-        <section class="contacts section">
-          <!------- contacts -------->
+        <section id="contacts" class="contacts section">
+          <!--- contacts -->
           <h3 class="title contacts__title">Contacts</h3>
           <ul class="contacts__list list">
-            <!-- mail -->
+            <!--- mail -->
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:oleksiibolotin@gmail.com">
                 <svg class="contacts__icon" width="16" height="16">
-                  <use href="sprite.svg#envelope"></use>
+                  <use href="./assets/sprite.svg#envelope"></use>
                 </svg>
                 <span class="contacts__text">oleksiibolotin@gmail.com</span>
               </a>
@@ -40,7 +46,7 @@
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+48886559715">
                 <svg class="contacts__icon" width="16" height="16">
-                  <use href="sprite.svg#phone"></use>
+                  <use href="./assets/sprite.svg#phone"></use>
                 </svg>
                 <span class="contacts__text">+48 886 559 715</span>
               </a>
@@ -53,7 +59,7 @@
                 href="https://www.linkedin.com/in/oleksii-bolotin/"
               >
                 <svg class="contacts__icon" width="16" height="16">
-                  <use href="sprite.svg#linkedin"></use>
+                  <use href="./assets/sprite.svg#linkedin"></use>
                 </svg>
 
                 <span class="contacts__text">LinkedIn</span>
@@ -64,18 +70,17 @@
             <li class="contacts__item">
               <a class="contacts__link" href="https://github.com/BolotinAlexey">
                 <svg class="contacts__icon" width="20" height="20">
-                  <use href="sprite.svg#github"></use>
+                  <use href="./assets/sprite.svg#github"></use>
                 </svg>
                 <span class="contacts__text">GitHub</span>
               </a>
             </li>
 
             <!-- Telegram -->
-
             <li class="contacts__item">
               <a class="contacts__link" href="https://t.me/samkiral">
                 <svg class="contacts__icon" width="16" height="16">
-                  <use href="sprite.svg#telegram"></use>
+                  <use href="./assets/sprite.svg#telegram"></use>
                 </svg>
 
                 <span class="contacts__text">Telegram</span>
@@ -86,10 +91,10 @@
             <li class="contacts__item">
               <a
                 class="contacts__link"
-                href="https://github.com/BolotinAlexey/my_resume"
+                href="https://bolotinalexey.github.io/rsschool-cv/"
               >
                 <svg class="contacts__icon" width="16" height="16">
-                  <use href="sprite.svg#sphere"></use>
+                  <use href="./assets/sprite.svg#sphere"></use>
                 </svg>
                 <span class="contacts__text">Web site</span></a
               >
@@ -98,71 +103,174 @@
             <!-- Location -->
             <li class="contacts__item">
               <svg class="contacts__icon" width="16" height="16">
-                <use href="sprite.svg#location"></use>
+                <use href="./assets/sprite.svg#location"></use>
               </svg>
               <span>Lodz, 94-047, Poland</span>
             </li>
           </ul>
         </section>
 
-        <!------- tech-skills -------->
-        <section class="tech section">
+        <!--- tech-skills -->
+        <section id="tech" class="tech section">
           <h3 class="title tech__title">Tech skills</h3>
           <ul class="tech__list list">
-            <li class="tech__item">HTML5</li>
-            <li class="tech__item">CSS3</li>
-            <li class="tech__item">SASS/LESS</li>
-            <li class="tech__item">JavaScript</li>
-            <li class="tech__item">TypeScript</li>
-            <li class="tech__item">React</li>
-            <li class="tech__item">Redux</li>
-            <li class="tech__item">NodeJS</li>
-            <li class="tech__item">ReactNative</li>
-            <li class="tech__item">PHP</li>
-            <li class="tech__item">MySQL</li>
-            <li class="tech__item">GIT</li>
-            <li class="tech__item">WebPack</li>
-            <li class="tech__item">Parcel</li>
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#html5"></use>
+              </svg>
+              <span>HTML5</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#css3"></use>
+              </svg>
+              <span>CSS3</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#sass"></use>
+              </svg>
+              <span>SASS</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#javascript"></use>
+              </svg>
+              <span>JavaScript</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#typescript"></use>
+              </svg>
+              <span>TypeScript</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#react"></use>
+              </svg>
+              <span>React</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#redux"></use>
+              </svg>
+              <span>Redux</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#node"></use>
+              </svg>
+              <span>NodeJS</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#react"></use>
+              </svg>
+              <span>ReactNative</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#php"></use>
+              </svg>
+              <span>PHP</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#mysql"></use>
+              </svg>
+              <span>MySQL</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              <span>GIT</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="contacts__icon" width="16" height="16">
+                <use href="./assets/skills.svg#webpack"></use>
+              </svg>
+              <span>WebPack</span>
+            </li>
+
+            <li class="tech__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#parcel"></use>
+              </svg>
+              <span>Parcel</span>
+            </li>
           </ul>
         </section>
 
-        <!------- soft-skills -------->
-        <section class="soft section">
+        <!--- soft-skills -->
+        <section id="soft" class="soft section">
           <h3 class="title soft__title">Soft skills</h3>
-          <ul class="soft list">
-            <li class="soft__item">Strong analytical thinks</li>
-            <li class="soft__item">Creativity</li>
-            <li class="soft__item">Conscientious</li>
-            <li class="soft__item">Eager to learn</li>
+          <ul class="soft__list list">
+            <li class="soft__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#analytic"></use>
+              </svg>
+              <span>Strong analytical thinks</span>
+            </li>
+            <li class="soft__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#creative"></use>
+              </svg>
+              <span>Creativity</span>
+            </li>
+            <li class="soft__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#heart"></use>
+              </svg>
+              <span>Conscientious</span>
+            </li>
+            <li class="soft__item">
+              <svg class="skills__icon" width="16" height="16">
+                <use href="./assets/skills.svg#learn"></use>
+              </svg>
+              <span>Eager to learn</span>
+            </li>
           </ul>
         </section>
 
-        <!------- language -------->
-        <section class="lang section">
+        <!--- language -->
+        <section id="lang" class="lang section">
           <h3 class="title lang__title">Language</h3>
           <ul class="lang list">
             <li class="lang__item">
-              <h4>Ukranian</h4>
-              <p class="lang__rate">Native</p>
-            </li>
-            <li class="lang__item">
-              <h4>Russian</h4>
-              <p class="lang__rate">Native</p>
+              <h4>English</h4>
+              <p class="lang__rate">Intermediate</p>
             </li>
             <li class="lang__item">
               <h4>Polish</h4>
               <p class="lang__rate">Intermediate</p>
             </li>
             <li class="lang__item">
-              <h4>English</h4>
-              <p class="lang__rate">Intermediate</p>
+              <h4>Russian</h4>
+              <p class="lang__rate">Native</p>
+            </li>
+            <li class="lang__item">
+              <h4>Ukranian</h4>
+              <p class="lang__rate">Proficiency</p>
             </li>
           </ul>
         </section>
-      </section>
+      </div>
 
-      <!------------ RIGHT --------------->
-      <section class="right">
+      <!---RIGHT -->
+      <div class="right">
         <section class="introduce">
           <h1>Oleksii Bolotin</h1>
           <h2>Fullstack developer</h2>
@@ -177,14 +285,14 @@
           </p>
         </section>
         <div class="right__wrap">
-          <!------- Project expierence ------->
-          <section class="projects section">
+          <!--- Project expierence -->
+          <section id="projects" class="projects section">
             <h3 class="title projects__title">Project expierence</h3>
             <ul class="projects__list">
               <!-- WebStudio -->
               <li class="project">
                 <img
-                  src="./images/WebStudio.png"
+                  src="./assets/WebStudio.png"
                   alt="WebStudio"
                   class="project__img"
                 />
@@ -214,7 +322,7 @@
               <!--  The New York Times -->
               <li class="project">
                 <img
-                  src="./images/NYTimes.png"
+                  src="./assets/NYTimes.png"
                   alt="The New York Times"
                   class="project__img"
                 />
@@ -246,39 +354,10 @@
                 </div>
               </li>
 
-              <!-- Hotel "Szalony dom" -->
-              <li class="project">
-                <img
-                  src="./images/Hotel.png"
-                  alt="Hotel"
-                  class="project__img"
-                />
-
-                <div class="flex-between">
-                  <a href="http://f0795832.xsph.ru" class="project__link"
-                    ><h4 class="project__title">Hotel "Szalony dom"</h4></a
-                  >
-                  <p class="project__own">Pet project</p>
-                </div>
-
-                <p class="project__description">
-                  Multipage web site of a small hotel. There is an admin panel
-                  for changing the database.
-                </p>
-                <div class="flex-between">
-                  <h5 class="project__stack">[CSS, PHP, MySQL]</h5>
-                  <a
-                    href="https://github.com/BolotinAlexey/goit-markup-hw-08"
-                    class="project__link"
-                    >Code</a
-                  >
-                </div>
-              </li>
-
               <!-- Ice Cream -->
               <li class="project">
                 <img
-                  src="./images/IceCream.png"
+                  src="./assets/IceCream.png"
                   alt="IceCream"
                   class="project__img"
                 />
@@ -291,7 +370,6 @@
                   >
                   <p class="project__own">Team project</p>
                 </div>
-
                 <p class="project__description">
                   Web site with adaptive and mobile first design presenting ice
                   cream-ordering company. My role - team leader and 'customers',
@@ -308,11 +386,44 @@
                   >
                 </div>
               </li>
+
+              <!--  The New York Times -->
+              <li class="project">
+                <img
+                  src="./assets/yummy.png"
+                  alt="The New York Times"
+                  class="project__img"
+                />
+
+                <div class="flex-between">
+                  <a
+                    href="https://basesnel.github.io/project-yummy-f/"
+                    class="project__link"
+                    ><h4 class="project__title">SoYummy Food Project</h4></a
+                  >
+                  <p class="project__own">Team project</p>
+                </div>
+
+                <p class="project__description">
+                  Multipage site, cookbook. With authorization with the help of
+                  JWT. Multifunctional application. I recommend for use. As
+                  developer, I created the categories page,theme switcher and
+                  styles using MUI.
+                </p>
+                <div class="flex-between">
+                  <h5 class="project__stack">[ React, Redux, MUI, NPM]</h5>
+                  <a
+                    href="https://github.com/basesnel/project-yummy-f"
+                    class="project__link"
+                    >Code</a
+                  >
+                </div>
+              </li>
             </ul>
           </section>
 
-          <!------- Work expierence ------->
-          <section class="work section">
+          <!--- Work expierence -->
+          <section id="work" class="work section">
             <h3 class="title work__title">Work expierence</h3>
             <ul class="work__list">
               <!-- Electrical Engineer -->
@@ -340,10 +451,9 @@
             </ul>
           </section>
 
-          <!----------- Education ---------->
-          <section class="education section">
+          <!--- Education -->
+          <section id="education" class="education section">
             <h3 class="title education__title">Education</h3>
-
             <ul class="education__list">
               <!-- GoIT -->
               <li class="education__item">
@@ -379,7 +489,9 @@
             </ul>
           </section>
         </div>
-      </section>
+      </div>
     </main>
+
+    <!---FOOTER -->
   </body>
 </html>
