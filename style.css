@@ -2,6 +2,7 @@
   --main-color: #000;
   --accent-color: #ff5d52;
   --second-color: #fff;
+  --accent-rgb: 255, 93, 82;
 }
 
 * {
@@ -78,6 +79,7 @@ a {
 
 .main {
   display: flex;
+  background-color: rgba(var(--accent-rgb), 0.03);
   /* flex-direction: column; */
 }
 
@@ -162,9 +164,9 @@ a {
   color: var(--second-color);
   background-color: var(--accent-color);
   position: relative;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .introduce:before {
@@ -174,11 +176,13 @@ a {
   right: 0;
   width: 0px;
   height: 0px;
-  border-bottom: 40px solid #eee;
-  border-right: 40px solid; /*Set to background color, not transparent!*/
-  -webkit-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+  border-top: 30px solid rgb(255, 250, 250);
+  border-right: 30px solid rgb(255, 250, 250);
+  border-bottom: 30px solid;
+  border-left: 30px solid; /*Set to background color, not transparent!*/
+  -webkit-box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.3);
 }
 
 .introduce > h2 {
