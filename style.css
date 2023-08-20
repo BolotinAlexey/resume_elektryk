@@ -149,6 +149,8 @@ p {
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
   margin: 8px 0;
   padding-left: 0;
   list-style: none;
@@ -156,8 +158,22 @@ p {
 
 .soft__item,
 .contacts__item {
-  flex-basis: 100%;
+  position: relative;
+  width: fit-content;
 }
+.contacts__item:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+.contacts__item:hover:before {
+  width: 100%;
+}
+
 .contacts__link,
 .contacts__item:nth-last-of-type(1) {
   display: flex;
@@ -172,12 +188,15 @@ p {
   font-size: 1rem;
   font-weight: 500;
 }
-.contacts__link:hover > .contacts__icon {
+/* .contacts__link:hover > .contacts__icon {
   order: 1;
-}
-.contacts__item:hover > .contacts__link {
+} */
+/* .contacts__item:hover > .contacts__link {
   padding-left: 22px;
-}
+} */
+/* .contacts__item:hover {
+  outline: solid 1px var(--accent-color);
+} */
 
 .tech__list,
 .soft__list {
