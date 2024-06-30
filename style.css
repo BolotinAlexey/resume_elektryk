@@ -279,14 +279,9 @@ p {
   margin: 0;
 }
 
-/* .projects__list {
-  padding-left: 53px;
-} */
-
 .project {
   position: relative;
   margin-top: 1.5rem;
-  padding-left: 1.5rem;
 }
 
 .flex-between {
