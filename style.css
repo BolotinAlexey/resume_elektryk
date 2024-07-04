@@ -29,6 +29,10 @@ h2 {
   font-family: "Hind Madurai";
 }
 
+body {
+  background-color: rgba(var(--accent-rgb), 0.03);
+}
+
 a {
   font-family: inherit;
   text-decoration: none;
@@ -126,7 +130,6 @@ p {
 }
 
 .main {
-  background-color: rgba(var(--accent-rgb), 0.03);
   display: flex;
 }
 
