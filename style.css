@@ -222,13 +222,13 @@ p {
   padding: 10px 20px;
   color: var(--second-color);
   background-color: var(--accent-color);
-  border-radius: 10px 0 0 10px;
-  -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  /* -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
-  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8); */
 }
 
-.introduce:before {
+/* .introduce:before {
   content: "";
   position: absolute;
   top: 0;
@@ -238,11 +238,11 @@ p {
   border-top: 30px solid rgb(255, 250, 250);
   border-right: 30px solid rgb(255, 250, 250);
   border-bottom: 30px solid;
-  border-left: 30px solid; /*Set to background color, not transparent!*/
+  border-left: 30px solid;
   -webkit-box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.3);
   box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .introduce > h1 {
   font-size: 2.7rem;
@@ -266,7 +266,7 @@ p {
 
 /* Project expierence */
 .projects__list {
-  max-height: 70vh;
+  /* max-height: 70vh; */
   overflow-y: auto;
   padding: 0;
 }
