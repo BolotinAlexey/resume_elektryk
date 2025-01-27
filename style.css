@@ -577,3 +577,12 @@ pre {
     transform: rotate(0deg);
   }
 }
+
+.sep{
+  transition: transform .3s ease, opacity .3s 1s ease;
+}
+
+.sep:hover{
+  transform: scale(5);
+  opacity: .9;
+}
