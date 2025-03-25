@@ -75,9 +75,11 @@ p {
 
 .list {
   display: flex;
-  gap: 15px 20px;
+  /* gap: 15px 20px; */
+  gap: 15px;
   padding-left: 20px;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
+  flex-direction: column;
 }
 .mb-5 {
   margin-bottom: 5px;
@@ -126,8 +128,9 @@ p {
 }
 
 .main {
-  background-color: rgba(var(--accent-rgb), 0.03);
+  background-color: rgba(var(--accent-rgb), 0.1);
   display: flex;
+  padding: .5rem;
 }
 
 .left {
@@ -219,7 +222,7 @@ p {
 
 .introduce {
   position: relative;
-  padding: 10px 20px;
+  padding: 1rem;
   color: var(--second-color);
   background-color: var(--accent-color);
   border-radius: 10px;
@@ -258,7 +261,7 @@ p {
 
 .summary {
   text-align: justify;
-  font-size: 1.045rem;
+  font-size: .95rem;
   font-weight: 500;
   font-family: "Alkatra";
   color: inherit;
@@ -343,14 +346,14 @@ p {
   width: 100%;
 }
 
-.work__item, .expierence__item, .education__item {
+.work__item, .expierence__item, .education__item, .lang__item {
   list-style: none;
   position: relative;
   padding-left: 40px;
   margin: .7rem 0 0;
 }
 
-.work__item::before, .expierence__item::before, .education__item::before {
+.work__item::before, .expierence__item::before, .education__item::before, .lang__item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -373,6 +376,17 @@ p {
 .education__item::before {
   background-image: url("assets/mortarboard.png");
 }
+
+.lang__item:nth-child(1):before {
+  background-image: url("assets/england.png");
+}
+.lang__item:nth-child(2):before {
+  background-image: url("assets/poland.png");
+}
+.lang__item:nth-child(3):before {
+  background-image: url("assets/ukraine.png");
+}
+
 
 .work__name {
   margin-top: 5px;
