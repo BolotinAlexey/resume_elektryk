@@ -194,7 +194,7 @@ p {
 }
 
 .tech__list,
-.soft__list {
+.soft__list, .lang {
   list-style: none;
   padding-left: 0;
 }
@@ -258,7 +258,7 @@ p {
 
 .summary {
   text-align: justify;
-  font-size: 0.9rem;
+  font-size: 1.045rem;
   font-weight: 500;
   font-family: "Alkatra";
   color: inherit;
@@ -273,10 +273,9 @@ p {
 
 .projects__list,
 .work__list,
-.education__list {
+.education__list, .sertifications__list {
   padding-left: 0;
   list-style: none;
-  margin: 0;
 }
 
 .project {
@@ -342,6 +341,37 @@ p {
 .education__item {
   margin: 15px 0 0;
   width: 100%;
+}
+
+.work__item, .expierence__item, .education__item {
+  list-style: none;
+  position: relative;
+  padding-left: 40px;
+  margin: .7rem 0 0;
+}
+
+.work__item::before, .expierence__item::before, .education__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.work__item::before {
+  background-image: url("assets/electrician.png");
+}
+
+.expierence__item::before {
+  background-image: url("assets/certificate.png");
+}
+
+.education__item::before {
+  background-image: url("assets/mortarboard.png");
 }
 
 .work__name {
@@ -579,10 +609,35 @@ pre {
 }
 
 .sep{
-  transition: transform .3s ease, opacity .3s 1s ease;
+  transition: all .3s ease;
+
 }
 
 .sep:hover{
   transform: scale(5);
-  opacity: .9;
+  z-index: 10;
+}
+
+.expierence__item:nth-child(4) .sep:hover, .expierence__item:nth-child(5) .sep:hover{
+  transform: scale(4);
+}
+
+.download-btn {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.download-btn:hover {
+  color: transparent;
+}
+
+.download-btn:hover::after {
+  content: "Download";
+  position: absolute;
+  left: 0;
+  color: black;
+  text-decoration: underline;
 }
